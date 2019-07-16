@@ -88,9 +88,9 @@ cd dropbear-$VERSION
 #########################################################################################################################
 echo "Generating required files..."
 
-HOST=arm-linux-androideabi
-COMPILER=${TOOLCHAIN}/bin/arm-linux-androideabi-gcc
-STRIP=${TOOLCHAIN}/bin/arm-linux-androideabi-strip
+HOST=aarch64-linux-android
+COMPILER=${TOOLCHAIN}/bin/aarch64-linux-android-gcc
+STRIP=${TOOLCHAIN}/bin/aarch64-linux-android-strip
 SYSROOT=${TOOLCHAIN}/sysroot
 
 export CC="$COMPILER --sysroot=$SYSROOT"
